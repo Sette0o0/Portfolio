@@ -33,3 +33,12 @@ body{
 #navbar li{
     margin: 0 10px;
 }
+footer{
+    background-color: rgb(64 54 73);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

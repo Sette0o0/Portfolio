@@ -4,32 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael Sette - Portfólio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="navbar">
-        <p>Rafael Sette</p>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-sm bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <img src="img/RafaelSetteFoto.jpg" alt="RafaelSetteFoto" class="rounded-circle me-sm-3" height="50px">
+                <a class="navbar-brand" href="#navbar">Rafael Sette</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 150px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projetos">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="sobre">
-            <img id="minha-foto" src="img/RafaelSetteFoto.jpg" alt="RafaelSetteFoto" height="300px">
+    <main class="container">
+        <section id="sobre" class="pt-4">
+            <!--<img id="minha-foto" src="img/RafaelSetteFoto.jpg" alt="RafaelSetteFoto" height="300px">-->
             <header>
                 <h1>Rafael Sette de Araujo</h1>
             </header>
             <p>Sou estudante de Desenvolvimento de Software Multiplataforma na Faculdade de Tecnologia (Fatec). Tenho experiência em HTML, CSS, JavaScript, PHP, Python e MySQL.</p>
-            <br>
             <p>Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Meu objetivo é me tornar um desenvolvedor full-stack e contribuir para projetos inovadores.</p>
+            <p>Meus projetos estão no meu <a href="https://github.com/Sette0o0" target="_blank">github</a>. Nele tenho as atividades realizadas em sala na Fatec.</p>
+        </section>
+        <hr>
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <h4>API-DSM-1SEMESTRE-2025</h4>
+                <p>
+                    Desenvolvemos uma plataforma web com dados sobre o desempenho dos municípios do Estado de São Paulo no comércio exterior, com base em informações públicas do Ministério do Desenvolvimento. A proposta é fornecer dados claros e acessíveis para auxiliar na tomada de decisões. Utilizamos pandas no Google Colab para tratar arquivos .csv e Flask para criar o site. O projeto superou desafios como o processamento de grandes volumes de dados e a integração entre análise e visualização.
+                </p>                              
+                <!--<a href="#" target="_blank">Ver Projeto (ainda não tem um link para o projeto rodando)</a>-->
+                <a href="https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025" target="_blank">GitHub</a>
+            </div>
+            <div class="projeto">
+                <h4>API-DSM-1SEMESTRE-2025</h4>
+                <p>
+                    Desenvolvemos uma plataforma web com dados sobre o desempenho dos municípios do Estado de São Paulo no comércio exterior, com base em informações públicas do Ministério do Desenvolvimento. A proposta é fornecer dados claros e acessíveis para auxiliar na tomada de decisões. Utilizamos pandas no Google Colab para tratar arquivos .csv e Flask para criar o site. O projeto superou desafios como o processamento de grandes volumes de dados e a integração entre análise e visualização.
+                </p>                              
+                <!--<a href="#" target="_blank">Ver Projeto (ainda não tem um link para o projeto rodando)</a>-->
+                <a href="https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025" target="_blank">GitHub</a>
+            </div>
+        </section>
+        <hr>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Você pode entrar em contato comigo por:</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/rafael-sette-de-araujo-229b88334/" target="_blank">Linkedin</a></li>
+                <li>Email: rafaelsette12345@gmail.com</li>
+            </ul>
         </section>
     </main>
-    <footer id="site-footer">
-        Todos os direitos reservados &copy; 2025 Rafael Sette de Araujo
+    <footer id="site-footer" class="footer">
+        <div class="container-fluid w-100 py-3 bg-light text-center">
+            Todos os direitos reservados &copy; 2025 <br>Rafael Sette de Araujo
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

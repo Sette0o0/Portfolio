@@ -10,3 +10,6 @@ section p{
 .projeto {
     margin: 1.5rem 0;
 }
+.projeto p{
+    margin: .25rem 0;
+}

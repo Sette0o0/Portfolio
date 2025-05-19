@@ -7,12 +7,14 @@
 section p{
     text-align: justify;
 }
+
 .projeto {
     margin: 1.5rem 0;
 }
 .projeto p{
     margin: .25rem 0;
 }
+
 #habilidades{
     display: grid;
     grid-template-columns: auto auto;
@@ -23,8 +25,21 @@ section p{
     width: fit-content;
     justify-content: center;
 }
+#certificado11{
+    display: block;
+}
+#certificadonotas{
+    display: block;
+}
 @media (max-width: 768px) {
     .cert-img > img{
-        height: 300px;
+        height: fit-content;
+        width: 100%;
+    }
+    #certificado11{
+        display: none;
+    }
+    #certificadonotas{
+        display: none;
     }
 }

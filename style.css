@@ -1,8 +1,8 @@
-.footer{
+#site-footer{
     /*position: absolute;
     bottom: 0;*/
     width: 100%;
-    background-color: #f5f5f5;
+    margin-top: 2rem;
 }
 section p{
     text-align: justify;
@@ -59,4 +59,23 @@ section p{
         height: fit-content;
         width: 95%;
     }
+}
+
+body{
+    color: whitesmoke;
+    background: #141415;
+}
+
+#navbar{
+    background-color: rgb(17, 11, 11, .1);
+    backdrop-filter: blur(4px);
+    text-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px 1px black;
+}
+#navbar > div > a{
+    font-size: x-large;
+}
+#site-footer{
+    box-shadow: 0 0 10px 1px black;
+    
 }

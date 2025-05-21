@@ -76,6 +76,6 @@ body{
     font-size: x-large;
 }
 #site-footer{
-    box-shadow: 0 0 10px 1px black;
-    
+    box-shadow: 0 0 10px 1px rgb(0, 0, 0, .3);
+    background-color: rgb(12, 11, 11, .5);
 }

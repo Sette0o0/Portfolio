@@ -2,11 +2,11 @@
 function Footer() {
 	return (
 		<>
-			<footer className={`container-fluid`}>
-				<div className={`d-flex flex-column align-items-center`}>
-					<p>
+			<footer className={`d-flex flex-column align-items-center py-4`}>
+				<div className={`d-flex`}>
+					<span>
 						Feito por: Rafael Sette de Araujo
-					</p>
+					</span>
 				</div>
 			</footer>
 		</>

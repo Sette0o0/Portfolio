@@ -1,0 +1,16 @@
+.name{
+  letter-spacing: -3%;
+}
+
+.sette{
+  color: var(--bs-primary);
+}
+
+.area{
+  letter-spacing: -2%;
+}
+
+.info{
+  width: 100%;
+  max-width: 450px;
+}

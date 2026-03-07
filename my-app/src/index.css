@@ -4,6 +4,21 @@
   padding: 0;
 }
 
+:root{
+  color-scheme: light dark;
+}
+
+/* body::-webkit-scrollbar{
+  width: 0.75rem;
+  background-color: var(--bs-tertiary-bg);
+}
+body::-webkit-scrollbar-button{
+  display: none;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: var(--bs-secondary-bg);
+} */
+
 body, body *{
   transition: background-color .2s, color .2s;
 }
@@ -14,7 +29,7 @@ body, body *{
   --bs-secondary-bg: #1e2124;
   --bs-secondary-bg-rgb: 30,33,36;
   
-  /* color-scheme: dark;
+  /* 
   --bs-body-color: #e1e3e5;
   --bs-body-color-rgb: 225,227,229;
   --bs-emphasis-color: #fff;

@@ -8,8 +8,13 @@ function ThemeToggle() {
 
   return(
     <>
-      <div onClick={toggleTheme} className={`${styles.themeToggle} ${theme == "dark" && styles.dark}`}>
-        <svg width="30" height="30" viewBox="0 0 24 24">
+      <button
+        onClick={toggleTheme}
+        aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}
+        aria-pressed={theme === "dark"}
+        className={`bg-transparent border-0 rounded-circle ${styles.themeToggle} ${theme == "dark" && styles.dark}`}
+      >
+        <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" className={`${styles.svg}`}>
 
           {/* máscara que faz parte do círculo principal sumir */}
           <mask id={maskId}>
@@ -32,7 +37,7 @@ function ThemeToggle() {
             <line x1="6.34" y1="6.34" x2="4.22" y2="4.22" />
           </g>
         </svg>
-      </div>
+      </button>
     </>
   )
 }

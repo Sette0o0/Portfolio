@@ -1,0 +1,24 @@
+.themeToggle{
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+.dark{
+  transform: scale(1.4);
+}
+
+.moonCut{
+  translate: 6px -6px;
+}
+.dark .moonCut{
+  translate: 0 0;
+}
+
+.rays{
+  transform-origin: 12px 12px;
+  transform-box: fill-box;
+  transition: opacity .3s ease, transform .5s ease-in-out;
+}
+.dark .rays{
+  opacity: 0;
+  transform: rotate(90deg);
+}

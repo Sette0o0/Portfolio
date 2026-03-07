@@ -13,22 +13,16 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
 
   useLayoutEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as Theme | null;
+    const currentTheme =
+      (document.body.getAttribute("data-bs-theme") as Theme) || "light";
 
-    const initialTheme: Theme =
-      savedTheme ||
-      (window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light");
-
-    document.body.setAttribute("data-bs-theme", initialTheme);
-    setTheme(initialTheme);
+    setTheme(currentTheme);
   }, []);
 
   function toggleTheme() {
     const newTheme: Theme = theme === "light" ? "dark" : "light";
 
-    document.body.setAttribute("data-bs-theme", newTheme);
+    document.documentElement.setAttribute("data-bs-theme", newTheme);
     localStorage.setItem("theme", newTheme);
     setTheme(newTheme);
   }

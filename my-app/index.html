@@ -8,6 +8,13 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // aplica o tema dark antes do css carregar pra não fazer a página piscar
+      const savedTheme = localStorage.getItem("theme")
+      const theme = savedTheme || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      
+      document.documentElement.setAttribute("data-bs-theme", theme) 
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

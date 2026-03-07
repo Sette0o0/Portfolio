@@ -3,7 +3,7 @@ import ThemeToggle from "../ThemeToggle"
 function Header() {
 	return (
 		<>
-			<header className="d-flex align-items-center p-3">
+			<header className="d-flex align-items-center bg-body-secondary p-3">
 				<nav className={`me-auto`}>
 					<ul className={`d-flex flex-row list-unstyled column-gap-3 m-0`}>
 						<li>Início</li>

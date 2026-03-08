@@ -16,6 +16,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     const currentTheme =
       (document.body.getAttribute("data-bs-theme") as Theme) || "light";
 
+    localStorage.setItem("theme", currentTheme);
     setTheme(currentTheme);
   }, []);
 

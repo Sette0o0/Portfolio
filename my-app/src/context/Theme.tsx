@@ -14,7 +14,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   useLayoutEffect(() => {
     const currentTheme =
-      (document.body.getAttribute("data-bs-theme") as Theme) || "light";
+      (document.documentElement.getAttribute("data-bs-theme") as Theme) || "light";
 
     localStorage.setItem("theme", currentTheme);
     setTheme(currentTheme);

@@ -1,0 +1,35 @@
+[
+  {
+    "nome": "Portfólio React-TS",
+    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
+    "imgUrl": "/RafaelSetteFoto.jpg",
+    "tecnologias": [
+      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+    ],
+    "repo": "https://github.com/Sette0o0/Portfolio"
+  },
+  {
+    "nome": "Portfólio React-TS",
+    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
+    "tecnologias": [
+      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+    ],
+    "repo": "https://github.com/Sette0o0/Portfolio"
+  },
+  {
+    "nome": "Portfólio React-TS",
+    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
+    "tecnologias": [
+      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+    ],
+    "repo": "https://github.com/Sette0o0/Portfolio"
+  },
+  {
+    "nome": "Portfólio React-TS",
+    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
+    "tecnologias": [
+      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+    ],
+    "repo": "https://github.com/Sette0o0/Portfolio"
+  }
+]

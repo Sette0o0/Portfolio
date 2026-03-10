@@ -1,25 +1,20 @@
-import ProjectCard from "../ProjectCard"
+
+import projetos from "../../assets/projetos.json"
+import Project from "../Project"
 
 interface ProjectsSectionProps {
   className?: string
-}
-
-const projeto = {
-  nome: "Plataforma de Gestão de blabla blá",
-  resumo: "bbbbbbbbbbbbb",
-  detalhes: "ccccccccccc",
-  repo: "dddddd"
 }
 
 function ProjectsSection({ className = "" }: ProjectsSectionProps){
   return(
     <>
       <section className={`${className}`}>
-        <h2 className={`text-center mb-4`}>Projetos</h2>
-        <div className={`d-flex flex-column gap-3 px-3`}>
-          <ProjectCard projeto={projeto} />
-          <ProjectCard projeto={projeto} />
-          <ProjectCard projeto={projeto} />
+        <h2 className={`text-center fs-1`}>Projetos</h2>
+        <div className={`d-flex flex-column`}>
+          {projetos.map((projeto) => (
+            <Project projeto={projeto} className="my-5" />
+          ))}
         </div>
       </section>
     </>

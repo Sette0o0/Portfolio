@@ -12,8 +12,8 @@ function ProjectsSection({ className = "" }: ProjectsSectionProps){
       <section className={`${className}`}>
         <h2 className={`text-center fs-1`}>Projetos</h2>
         <div className={`d-flex flex-column`}>
-          {projetos.map((projeto) => (
-            <Project projeto={projeto} />
+          {projetos.map((projeto, key) => (
+            <Project key={key} projeto={projeto} />
           ))}
         </div>
       </section>

@@ -26,7 +26,7 @@ function ThemeToggle() {
           <circle cx="12" cy="12" r="6" mask={`url(#${maskId})`} fill="currentColor" />
 
           {/* as linhas ao redor do sol */}
-          <g className={`${styles.rays}`} stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <g className={`${styles.rays}`} stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <line x1="12" y1="4" x2="12" y2="1" />
             <line x1="17.66" y1="6.34" x2="19.78" y2="4.22" />
             <line x1="20" y1="12" x2="23" y2="12" />

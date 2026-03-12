@@ -15,7 +15,7 @@ function Project({ projeto, className = "" }: ProjectProps){
       .forEach((detail) => {
         detail.style.setProperty("--max-height", detail.firstElementChild?.clientHeight + "px")
       })
-  }, [])
+  })
 
   return(
     <>
@@ -49,8 +49,8 @@ function Project({ projeto, className = "" }: ProjectProps){
             <div className={`d-flex flex-column w-100`}>
               <p className={`text-justify`}>{projeto.resumo}</p>
               <ul className={`list-unstyled text-muted`}>
-                {projeto.tecnologias.map((tec) => (
-                  <li className={`list-inline-item`}>{tec}</li>
+                {projeto.tecnologias.map((tec, key) => (
+                  <li key={key} className={`list-inline-item`}>{tec}</li>
                 ))}
               </ul>
 

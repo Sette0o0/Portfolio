@@ -13,7 +13,7 @@ function ProjectsSection({ className = "" }: ProjectsSectionProps){
         <h2 className={`text-center fs-1`}>Projetos</h2>
         <div className={`d-flex flex-column`}>
           {projetos.map((projeto) => (
-            <Project projeto={projeto} className="my-5" />
+            <Project projeto={projeto} />
           ))}
         </div>
       </section>

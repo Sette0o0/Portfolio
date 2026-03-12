@@ -7,8 +7,9 @@ function HeroSection(){
   return(
     <>
       <section className={`d-flex flex-row flex-wrap overflow-hidden`}>
-        <div className={`d-flex col-12 col-sm-6`}>
+        <div className={`d-flex col-12 col-sm-6 position-relative`}>
           <img className={`w-100`} src={MinhaFoto} alt="Foto de perfil de Rafael Sette" />
+          <div className={`${styles.gradient}`}></div>
         </div>
         <div className={`${styles.content} d-flex flex-column justify-content-center align-items-center text-center col-12 col-sm-6 p-3 pt-4 pt-sm-3`}>
           <h1 className={`${styles.name} mb-1 mb-sm-2`}>Rafael <span className={`${styles.sette}`}>Sette</span> de Araujo</h1>

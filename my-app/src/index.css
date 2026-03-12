@@ -1,10 +1,12 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-:root{
+:root {
   color-scheme: light dark;
 }
 
@@ -19,19 +21,20 @@ body::-webkit-scrollbar-thumb{
   background-color: var(--bs-secondary-bg);
 } */
 
-body, body *{
+body,
+body * {
   transition: background-color .2s, color .2s;
 }
 
 [data-bs-theme="dark"] {
   --bs-body-bg: #161718;
-  --bs-body-bg-rgb: 22,23,24;
+  --bs-body-bg-rgb: 22, 23, 24;
   --bs-secondary-bg: #1e2124;
-  --bs-secondary-bg-rgb: 30,33,36;
-  
-  /* 
+  --bs-secondary-bg-rgb: 30, 33, 36;
   --bs-body-color: #e1e3e5;
-  --bs-body-color-rgb: 225,227,229;
+  --bs-body-color-rgb: 225, 227, 229;
+
+  /* 
   --bs-emphasis-color: #fff;
   --bs-emphasis-color-rgb: 255,255,255;
   --bs-secondary-color: rgba(222, 226, 230, 0.75);
@@ -80,6 +83,58 @@ body, body *{
   --bs-form-invalid-border-color: #ea868f; */
 }
 
-.text-justify{
+/* Fazer details ficar bonito com animação */
+details {
+  overflow: hidden;
+}
+
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+details span::before {
+  content: "►";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  transition: rotate .25s ease-in-out;
+}
+
+
+div.details-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-out;
+}
+
+details[open]+div.details-content {
+  max-height: var(--max-height);
+  border: 1px solid var(--bs-body-color);
+  border-radius: 1rem;
+}
+
+details[open] span::before {
+  rotate: 90deg;
+}
+
+
+/* Classes de utilidade */
+.text-justify {
   text-align: justify;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
 }

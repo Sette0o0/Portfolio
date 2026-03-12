@@ -20,9 +20,9 @@ function Project({ projeto, className = "" }: ProjectProps){
   return(
     <>
       <article className={`${className} d-flex flex-column position-relative p-3 p-lg-5`}>
-        {theme === "dark" && (
+        {(theme === "dark" && projeto.imgUrl) && (
           <div className={``} style={{
-            background: `url("${projeto.imgUrl}") center no-repeat`,
+            background: `url("${projeto.imgUrl[0]}") center no-repeat`,
             backgroundSize: "cover",
             position: "absolute",
             inset: "0",
@@ -40,7 +40,7 @@ function Project({ projeto, className = "" }: ProjectProps){
               // ter suporte para mais imagens, talvez com um carroussel
               // tela maior que md a imagem ficar na direita
                 <div className={`order-md-last align-self-center col-11 col-sm-10 col-md-5 mb-3 mb-md-0`}>
-                  <img src={projeto.imgUrl} alt={`Imagem do projeto ${projeto.nome}`}
+                  <img src={projeto.imgUrl[0]} alt={`Imagem do projeto ${projeto.nome}`}
                     className={`w-100 rounded rounded-4 my-auto`}
                   />
                 </div>

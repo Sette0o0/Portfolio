@@ -9,12 +9,14 @@
     "repo": "https://github.com/Sette0o0/Portfolio"
   },
   {
-    "nome": "Portfólio React-TS",
-    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
+    "nome": "Estatísticas do Comércio Exterior do Estado de São Paulo",
+    "resumo": "Ferramenta que permite monitorar as tendências de mercado internacional do estado de São Paulo, possibilitando que usuários acessem e analisem dados de forma intuitiva e prática. Os usuários podem ver o valor de cada carga de cada município e comparar com outras cargas e/ou municípios.",
+    "imgUrl": "/imagens/projetos/apiComercioExteriorSP.jpg",
     "tecnologias": [
-      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+      "Python", "Flask", "Pandas", "HTML", "CSS", "JavaScript"
     ],
-    "repo": "https://github.com/Sette0o0/Portfolio"
+    "atuacao": "Nesse Projeto eu trabalhei com a raspagem de dados dos arquivos .csv do governo usando a biblioteca Pandas do Python, posteriormente criei gráficos e tabelas com esses dados usando o plotly, tudo feito no Colab da Google.",
+    "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025"
   },
   {
     "nome": "Portfólio React-TS",

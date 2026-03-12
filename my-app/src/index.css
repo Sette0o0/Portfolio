@@ -121,8 +121,6 @@ div.details-content {
 
 details[open]+div.details-content {
   max-height: var(--max-height);
-  border: 1px solid var(--bs-body-color);
-  border-radius: 1rem;
 }
 
 details[open] span::before {

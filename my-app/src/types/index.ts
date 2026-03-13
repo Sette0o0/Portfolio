@@ -6,3 +6,11 @@ export interface ProjectInfo {
   tecnologias: string[]
   repo: string
 }
+
+export interface FormationInfo {
+  instituicao: string
+  curso: string
+  dataInicio: string
+  dataConclusao: string
+  imgUrl?: string
+}

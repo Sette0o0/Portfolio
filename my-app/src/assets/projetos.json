@@ -19,7 +19,7 @@
     "tecnologias": [
       "Python", "Flask", "Pandas", "HTML", "CSS", "JavaScript"
     ],
-    "atuacao": "Nesse Projeto eu trabalhei com a raspagem de dados dos arquivos .csv do governo usando a biblioteca Pandas do Python, posteriormente criei gráficos e tabelas com esses dados usando o plotly, tudo feito no Colab da Google.",
+    "atuacao": "Nesse Projeto eu trabalhei mais com a raspagem de dados dos arquivos .csv do governo usando a biblioteca Pandas do Python, posteriormente criei gráficos e tabelas com esses dados usando o plotly, tudo feito no Colab da Google.",
     "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025"
   },
   {

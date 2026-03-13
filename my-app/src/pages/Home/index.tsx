@@ -6,10 +6,10 @@ function Home() {
 	return (
 		<>
 			<HeroSection />
-			<hr className={`w-75 mx-auto d-sm-none`} />
-			<ProjectsSection className={`py-3`}/>
-			<hr className={`w-75 mx-auto`} />
-			<FormationsSection className={`py-3`} />
+			<hr className={`w-75 my-0 mx-auto d-sm-none`} />
+			<ProjectsSection className={`py-5`}/>
+			<hr className={`w-75 my-0 mx-auto`} />
+			<FormationsSection className={`py-5`} />
 		</>
 	)
 }

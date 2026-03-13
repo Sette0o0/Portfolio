@@ -136,3 +136,12 @@ details[open] span::before {
 .text-wrap-balance {
   text-wrap: balance;
 }
+
+section > .article-list {
+  & > :first-child {
+    padding-top: 1.5rem !important;
+  }
+  & > :last-child {
+    padding-bottom: 0 !important;
+  }
+}

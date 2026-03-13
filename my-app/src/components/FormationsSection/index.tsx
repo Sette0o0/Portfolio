@@ -10,7 +10,7 @@ function FormationsSection({ className = "" }: FormationSectionProps){
     <>
       <section id="formacoes" className={`${className}`}>
         <h2 className={`text-center`}>Formações</h2>
-        <div className={`d-flex flex-column`}>
+        <div className={`article-list d-flex flex-column`}>
           {formations.map((formation, key) => (
             <Formation key={key} formation={formation} />
           ))}

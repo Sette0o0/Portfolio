@@ -19,7 +19,7 @@ function Project({ projeto, className = "" }: ProjectProps){
 
   return(
     <>
-      <article className={`${className} d-flex flex-column position-relative p-3 p-lg-5`}>
+      <article className={`${className} d-flex flex-column position-relative px-3 px-lg-5 py-5`}>
         {(theme === "dark" && projeto.imgUrl) && (
           <div className={``} style={{
             background: `url("${projeto.imgUrl[0]}") center no-repeat`,

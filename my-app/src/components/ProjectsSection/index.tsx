@@ -1,4 +1,3 @@
-
 import projetos from "../../assets/projetos.json"
 import Project from "../Project"
 
@@ -11,7 +10,7 @@ function ProjectsSection({ className = "" }: ProjectsSectionProps){
     <>
       <section className={`${className}`}>
         <h2 className={`text-center fs-1`}>Projetos</h2>
-        <div className={`d-flex flex-column`}>
+        <div className={`article-list d-flex flex-column`}>
           {projetos.map((projeto, key) => (
             <Project key={key} projeto={projeto} />
           ))}

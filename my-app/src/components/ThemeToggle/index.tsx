@@ -2,7 +2,11 @@ import { useId } from "react"
 import { useTheme } from "../../context/Theme"
 import styles from "./index.module.css"
 
-function ThemeToggle() {
+interface themeToggleProps {
+  className?: string
+}
+
+function ThemeToggle({ className = ""}: themeToggleProps) {
   const { theme, toggleTheme } = useTheme()
   const maskId = useId()
 
@@ -12,7 +16,7 @@ function ThemeToggle() {
         onClick={toggleTheme}
         aria-label={theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro"}
         aria-pressed={theme === "dark"}
-        className={`bg-transparent border-0 rounded-circle ${styles.themeToggle} ${theme == "dark" && styles.dark}`}
+        className={`${className} bg-transparent border-0 rounded-circle ${styles.themeToggle} ${theme == "dark" && styles.dark}`}
       >
         <svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true" className={`${styles.svg}`}>
 

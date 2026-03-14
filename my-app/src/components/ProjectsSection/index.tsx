@@ -8,7 +8,7 @@ interface ProjectsSectionProps {
 function ProjectsSection({ className = "" }: ProjectsSectionProps){
   return(
     <>
-      <section className={`${className}`}>
+      <section id="projetos" className={`${className}`}>
         <h2 className={`text-center fs-1`}>Projetos</h2>
         <div className={`article-list d-flex flex-column`}>
           {projetos.map((projeto, key) => (

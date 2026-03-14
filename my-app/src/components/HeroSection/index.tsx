@@ -6,7 +6,7 @@ import styles from "./index.module.css"
 function HeroSection(){
   return(
     <>
-      <section className={`d-flex flex-row flex-wrap overflow-hidden`}>
+      <section id="inicio" className={`d-flex flex-row flex-wrap overflow-hidden`}>
         <div className={`d-flex col-12 col-sm-6 position-relative`}>
           <img className={`w-100`} src={MinhaFoto} alt="Foto de perfil de Rafael Sette" />
           <div className={`${styles.gradient}`}></div>

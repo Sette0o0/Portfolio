@@ -27,7 +27,7 @@ function Project({ projeto, className = "" }: ProjectProps){
             position: "absolute",
             inset: "0",
             zIndex: "-1",
-            filter: `blur(60px) brightness(.6)`,
+            filter: `blur(60px) brightness(.5)`,
             transform: "scale(1, .7)"
           }}></div>
         )}

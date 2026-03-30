@@ -20,6 +20,7 @@ function Header() {
 
 	function closeNavbar() {
 		if (!navbarRef.current) return
+		if (document.querySelector("navbar-toggler")?.ariaExpanded === "false") return
 
 		const collapse = Collapse.getOrCreateInstance(navbarRef.current)
 		collapse.hide()
@@ -59,7 +60,7 @@ function Header() {
 
 	return (
 		<>
-			<header className="navbar navbar-expand-sm bg-body-secondary sticky-top">
+			<header className="navbar navbar-expand-sm bg-body-secondary sticky-top" style={{userSelect: "none"}}>
 				<nav className={`container-fluid`}>
 					<p className={`navbar-brand fw-medium mb-0`}>Rafael Sette</p>
 					<button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,30 +69,47 @@ function Header() {
 					<div ref={navbarRef} id="navbarContent" className={`collapse navbar-collapse`}>
 						<ul className={`navbar-nav w-100`}>
 							<li>
-								<a
+								<button
+									role="link"
+									type="button"
 									className="nav-link"
 									onClick={() => handleNavClick("inicio")}
 								>
 									Início
-								</a>
+								</button>
 							</li>
 
 							<li>
-								<a
+								<button
+									role="link"
+									type="button"
 									className="nav-link"
 									onClick={() => handleNavClick("projetos")}
 								>
 									Projetos
-								</a>
+								</button>
 							</li>
 
 							<li>
-								<a
+								<button
+									role="link"
+									type="button"
 									className="nav-link"
 									onClick={() => handleNavClick("formacoes")}
 								>
 									Formações
-								</a>
+								</button>
+							</li>
+
+							<li>
+								<button
+									role="link"
+									type="button"
+									className="nav-link text-nowrap"
+									onClick={() => handleNavClick("sobre-mim")}
+								>
+									Sobre Mim
+								</button>
 							</li>
 							<li className={`p-1 pb-2 p-sm-0 ms-sm-auto`}>
 								<ThemeToggle className={`p-1`} />

@@ -1,10 +1,7 @@
 [
   {
     "nome": "Portfólio React-TS",
-    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
-    "imgUrl": [
-      "/RafaelSetteFoto.jpg"
-    ],
+    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações. (esse que está vendo agora : )",
     "tecnologias": [
       "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
     ],
@@ -23,19 +20,15 @@
     "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025"
   },
   {
-    "nome": "Portfólio React-TS",
-    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
-    "tecnologias": [
-      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+    "nome": "Plataforma de Gestão Administrativa, Comercial e Operacional",
+    "resumo": "Uma aplicação web que visa centralizar a gestão de diferentes setores de uma empresa (administrativo, comercial e operacional). Ela integra diferentes operações realizadas na empresa, como envio de formulários, relatórios, frete e notificações.",
+    "imgUrl": [
+      "/imagens/projetos/apiNeweAdm.jpg"
     ],
-    "repo": "https://github.com/Sette0o0/Portfolio"
-  },
-  {
-    "nome": "Portfólio React-TS",
-    "resumo": "Site que mostra os meus projetos como desenvolvedor e minhas experiências e formações.",
     "tecnologias": [
-      "React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"
+      "React", "TypeScript", "JavaScript", "node.js", "express", "HTML", "CSS", "Bootstrap"
     ],
-    "repo": "https://github.com/Sette0o0/Portfolio"
+    "atuacao": "Nesse Projeto eu trabalhei em todas as partes, dês de banco de dados (MySql), rotas e controles no backend com express até telas, formulários, layout no frontend com react, além de feito a portabilidade de javascript puro para react na 2ª sprint.",
+    "repo": "https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025"
   }
 ]

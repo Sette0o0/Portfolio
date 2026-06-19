@@ -74,6 +74,7 @@
       "resultados": "Criação de tabelas e gráficos que facilitam a comparação de cargas e municípios.",
       "tecnologias": ["Python", "Flask", "Pandas", "HTML", "CSS", "JavaScript"],
       "atuacao": "Trabalhei principalmente com tratamento de dados em arquivos CSV usando Pandas. Também participei da criação de gráficos e tabelas com Plotly no Google Colab.",
+      "softskills": "Desenvolvi comunicação em equipe, organização das atividades e colaboração durante as entregas por sprint. Também pratiquei escuta ativa para entender as necessidades do projeto, adaptação ao ritmo de trabalho acadêmico e alinhamento constante com os colegas para transformar dados complexos em informações mais claras para o usuário.",
       "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025",
       "demo": "",
       "imagens": ["/imagens/projetos/apiComercioExteriorSP.jpg"]
@@ -99,6 +100,7 @@
         "Bootstrap"
       ],
       "atuacao": "Atuei no banco de dados, rotas e controllers no back-end com Express, além de telas, formulários e layout no front-end com React.",
+      "softskills": "Aprimorei o trabalho em grupo, a comunicação técnica e a divisão de responsabilidades entre front-end, back-end e banco de dados. Também desenvolvi maior autonomia, capacidade de resolver problemas durante integrações, organização para acompanhar o ritmo das sprints e comunicação mais objetiva para alinhar decisões com a equipe.",
       "repo": "https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025",
       "demo": "",
       "imagens": ["/imagens/projetos/apiNeweAdm.jpg"]
@@ -125,6 +127,7 @@
         "Docker"
       ],
       "atuacao": "Atuei como desenvolvedor no projeto, ficando responsável pelo back-end da funcionalidade de apontamento de tempo e pela construção da tela de apontamento. Também desenvolvi a tela de detalhes do projeto, trabalhei na responsividade da interface e trabalhei na implementação do micro serviço de gateway.",
+      "softskills": "Fortaleci a comunicação com a equipe e o contato com o cliente para compreender regras de negócio, validar funcionalidades e ajustar entregas conforme as necessidades apresentadas. Também desenvolvi colaboração em equipe, responsabilidade sobre módulos específicos, adaptação a mudanças de escopo, organização para manter o ritmo de trabalho das sprints e maior clareza na comunicação de problemas técnicos e decisões de implementação.",
       "repo": "https://github.com/Team-Chronos/API-DSM-3SEMESTRE-2026",
       "demo": "",
       "imagens": ["/imagens/projetos/apiGSWApontamento.png"]

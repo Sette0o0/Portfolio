@@ -94,6 +94,11 @@ function Project({ projeto, className = "" }: ProjectProps) {
                     <strong>Atuação:</strong> {projeto.atuacao}
                   </p>
                 )}
+                {projeto.softskills && (
+                  <p className={`mb-2`}>
+                    <strong>Softskills:</strong> {projeto.softskills}
+                  </p>
+                )}
                 <p className={`mb-2`}>
                   <strong>Metodologia:</strong> {projeto.metodologia}
                 </p>

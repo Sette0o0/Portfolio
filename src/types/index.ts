@@ -9,6 +9,7 @@ export interface ProjectInfo {
   resultados: string
   imagens?: string[]
   atuacao?: string
+  softskills?: string
   tecnologias: string[]
   repo: string
   demo?: string

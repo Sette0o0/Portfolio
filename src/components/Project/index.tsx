@@ -1,42 +1,53 @@
-import { useEffect } from "react"
-import { useTheme } from "../../context/Theme"
-import type { ProjectInfo } from "../../types"
+import { useEffect } from "react";
+import { useTheme } from "../../context/Theme";
+import type { ProjectInfo } from "../../types";
 
 interface ProjectProps {
-  projeto: ProjectInfo
-  className?: string
+  projeto: ProjectInfo;
+  className?: string;
 }
 
 function Project({ projeto, className = "" }: ProjectProps) {
-  const { theme } = useTheme()
-  const image = projeto.imagens?.[0]
+  const { theme } = useTheme();
+  let image = projeto.imagens?.[0];
+
+  const isImgPortfolio = image ? image.includes("portfolio-") : false;
+
+  if (isImgPortfolio) {
+    image = theme === "dark" ? image?.replace("dark", "light") : image?.replace("light", "dark");
+  }
 
   useEffect(() => {
-    document.querySelectorAll<HTMLElement>("div.details-content")
-      .forEach((detail) => {
-        detail.style.setProperty("--max-height", detail.firstElementChild?.clientHeight + "px")
-      })
-  })
+    document.querySelectorAll<HTMLElement>("div.details-content").forEach((detail) => {
+      detail.style.setProperty("--max-height", detail.firstElementChild?.clientHeight + "px");
+    });
+  });
 
   return (
     <article className={`${className} d-flex flex-column position-relative px-3 px-lg-5 py-5`}>
-      {(theme === "dark" && image) && (
-        <div style={{
-          background: `url("${image}") center no-repeat`,
-          backgroundSize: "cover",
-          position: "absolute",
-          inset: "0",
-          zIndex: "-1",
-          filter: `blur(60px) brightness(.5)`,
-          transform: "scale(1, .7)"
-        }}></div>
+      {theme === "dark" && image && (
+        <div
+          style={{
+            background: `url("${image}") center no-repeat`,
+            backgroundSize: "cover",
+            position: "absolute",
+            inset: "0",
+            zIndex: "-1",
+            filter: `blur(60px) brightness(.5)`,
+            transform: "scale(1, .7)",
+          }}
+        ></div>
       )}
       <div>
         <h3 className={`text-wrap-balance mb-3`}>{projeto.nome}</h3>
         <div className={`d-flex flex-column flex-md-row column-gap-3 column-gap-lg-5`}>
           {image && (
-            <div className={`order-md-last align-self-center col-11 col-sm-10 col-md-5 mb-3 mb-md-0`}>
-              <img src={image} alt={`Imagem do projeto ${projeto.nome}`}
+            <div
+              className={`order-md-last align-self-center col-11 col-sm-10 col-md-5 mb-3 mb-md-0`}
+            >
+              <img
+                src={image}
+                alt={`Imagem do projeto ${projeto.nome}`}
                 className={`w-100 rounded-3 my-auto shadow-sm`}
               />
             </div>
@@ -46,7 +57,9 @@ function Project({ projeto, className = "" }: ProjectProps) {
             <p className={`text-justify`}>{projeto.descricao}</p>
             <ul className={`list-unstyled d-flex flex-wrap gap-2 mb-3`}>
               {projeto.tecnologias.map((tec) => (
-                <li key={tec} className={`badge rounded-pill text-bg-secondary fw-medium`}>{tec}</li>
+                <li key={tec} className={`badge rounded-pill text-bg-secondary fw-medium`}>
+                  {tec}
+                </li>
               ))}
             </ul>
 
@@ -76,18 +89,36 @@ function Project({ projeto, className = "" }: ProjectProps) {
             </details>
             <div className={`details-content text-justify mb-3`}>
               <div className={`p-2`}>
-                {projeto.atuacao && <p className={`mb-2`}><strong>Atuação:</strong> {projeto.atuacao}</p>}
-                <p className={`mb-2`}><strong>Metodologia:</strong> {projeto.metodologia}</p>
-                <p className={`mb-0`}><strong>Desafios:</strong> {projeto.desafios}</p>
+                {projeto.atuacao && (
+                  <p className={`mb-2`}>
+                    <strong>Atuação:</strong> {projeto.atuacao}
+                  </p>
+                )}
+                <p className={`mb-2`}>
+                  <strong>Metodologia:</strong> {projeto.metodologia}
+                </p>
+                <p className={`mb-0`}>
+                  <strong>Desafios:</strong> {projeto.desafios}
+                </p>
               </div>
             </div>
 
             <div className={`d-flex flex-wrap gap-2 mt-auto`}>
-              <a href={projeto.repo} target="_blank" rel="noopener noreferrer" className={`btn btn-primary fw-semibold rounded-5 px-3 py-2`}>
+              <a
+                href={projeto.repo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`btn btn-primary fw-semibold rounded-5 px-3 py-2`}
+              >
                 Repositório<i className="bi bi-box-arrow-up-right ms-2"></i>
               </a>
               {projeto.demo && (
-                <a href={projeto.demo} target="_blank" rel="noopener noreferrer" className={`btn btn-outline-primary fw-semibold rounded-5 px-3 py-2`}>
+                <a
+                  href={projeto.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`btn btn-outline-primary fw-semibold rounded-5 px-3 py-2`}
+                >
                   Demonstração<i className="bi bi-display ms-2"></i>
                 </a>
               )}
@@ -96,7 +127,7 @@ function Project({ projeto, className = "" }: ProjectProps) {
         </div>
       </div>
     </article>
-  )
+  );
 }
 
-export default Project
+export default Project;

@@ -58,17 +58,10 @@
       "metodologia": "Organização incremental das seções com foco em responsividade, clareza visual e manutenção simples.",
       "desafios": "Transformar as seções fixas em uma estrutura escalável.",
       "resultados": "Portfólio mais completo, alinhado ao roteiro acadêmico e preparado para atualização contínua.",
-      "tecnologias": [
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "HTML",
-        "CSS",
-        "Bootstrap"
-      ],
+      "tecnologias": ["React", "TypeScript", "JavaScript", "HTML", "CSS", "Bootstrap"],
       "repo": "https://github.com/Sette0o0/Portfolio",
       "demo": "",
-      "imagens": []
+      "imagens": ["/imagens/projetos/portfolio-light.png"]
     },
     {
       "nome": "Estatísticas do Comércio Exterior do Estado de São Paulo",
@@ -79,20 +72,11 @@
       "metodologia": "Projeto acadêmico desenvolvido em equipe com práticas de Scrum e entregas por sprint.",
       "desafios": "Tratar arquivos CSV governamentais e transformar dados brutos em visualizações compreensíveis.",
       "resultados": "Criação de tabelas e gráficos que facilitam a comparação de cargas e municípios.",
-      "tecnologias": [
-        "Python",
-        "Flask",
-        "Pandas",
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
+      "tecnologias": ["Python", "Flask", "Pandas", "HTML", "CSS", "JavaScript"],
       "atuacao": "Trabalhei principalmente com tratamento de dados em arquivos CSV usando Pandas. Também participei da criação de gráficos e tabelas com Plotly no Google Colab.",
       "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025",
       "demo": "",
-      "imagens": [
-        "/imagens/projetos/apiComercioExteriorSP.jpg"
-      ]
+      "imagens": ["/imagens/projetos/apiComercioExteriorSP.jpg"]
     },
     {
       "nome": "Plataforma de Gestão Administrativa, Comercial e Operacional",
@@ -117,56 +101,52 @@
       "atuacao": "Atuei no banco de dados, rotas e controllers no back-end com Express, além de telas, formulários e layout no front-end com React.",
       "repo": "https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025",
       "demo": "",
-      "imagens": [
-        "/imagens/projetos/apiNeweAdm.jpg"
-      ]
+      "imagens": ["/imagens/projetos/apiNeweAdm.jpg"]
+    },
+    {
+      "nome": "Controle de Apontamento de Horas - GSW",
+      "descricao": "Sistema centralizado de apontamento de horas para controle de projetos, clientes, tarefas, profissionais, custos e faturamento.",
+      "problema": "A empresa utilizava registros dispersos, como planilhas, mensagens e anotações, dificultando a gestão da equipe, o controle de horas e a visibilidade dos custos dos projetos.",
+      "objetivo": "Centralizar o registro de horas trabalhadas, organizar projetos e tarefas, controlar custos e apoiar gestores e financeiro na tomada de decisão.",
+      "solucao": "Plataforma web com cadastro de projetos, hierarquia de itens e atividades, apontamento de horas, controle de perfis, dashboards, relatórios e exportação de dados.",
+      "metodologia": "Projeto acadêmico desenvolvido em equipe com Scrum, backlog priorizado, Definition of Ready, Definition of Done e entregas organizadas por sprints.",
+      "desafios": "Criar uma solução simples para o usuário final, mantendo regras de negócio para diferentes tipos de projeto, controle de acesso, dados financeiros e relatórios gerenciais.",
+      "resultados": "Sistema funcional com gestão de projetos, apontamento de horas, dashboards, relatórios, controle financeiro e diferentes perfis de acesso.",
+      "tecnologias": [
+        "React",
+        "TypeScript",
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Tailwind CSS",
+        "Docker"
+      ],
+      "atuacao": "Atuei como desenvolvedor no projeto, ficando responsável pelo back-end da funcionalidade de apontamento de tempo e pela construção da tela de apontamento. Também desenvolvi a tela de detalhes do projeto, trabalhei na responsividade da interface e trabalhei na implementação do micro serviço de gateway.",
+      "repo": "https://github.com/Team-Chronos/API-DSM-3SEMESTRE-2026",
+      "demo": "",
+      "imagens": ["/imagens/projetos/apiGSWApontamento.png"]
     }
   ],
   "habilidades": {
     "tecnicas": [
       {
         "grupo": "Linguagens",
-        "itens": [
-          "TypeScript",
-          "JavaScript",
-          "Python",
-          "Java",
-          "HTML",
-          "CSS",
-          "SQL"
-        ]
+        "itens": ["TypeScript", "JavaScript", "Python", "Java", "HTML", "CSS", "SQL"]
       },
       {
         "grupo": "Frameworks e bibliotecas",
-        "itens": [
-          "React",
-          "Node.js",
-          "Express",
-          "Flask",
-          "Tailwind",
-          "Bootstrap",
-          "Pandas"
-        ]
+        "itens": ["React", "Node.js", "Express", "Flask", "Tailwind", "Bootstrap", "Pandas"]
       },
       {
         "grupo": "Banco de dados",
-        "itens": [
-          "MySQL",
-          "MongoDB",
-          "Modelagem relacional",
-          "Modelagem não relacional"
-        ]
+        "itens": ["MySQL", "MongoDB", "Modelagem relacional", "Modelagem não relacional"]
       },
       {
         "grupo": "Ferramentas e plataformas",
-        "itens": [
-          "Git",
-          "GitHub",
-          "Vite",
-          "Docker",
-          "Google Colab",
-          "Scrum"
-        ]
+        "itens": ["Git", "GitHub", "Vite", "Docker", "Google Colab", "Scrum"]
       }
     ],
     "comportamentais": [
@@ -178,8 +158,7 @@
       "Reconhecer o erro"
     ]
   },
-  "documentosAcademicos": [
-  ],
+  "documentosAcademicos": [],
   "certificados": [
     {
       "nome": "Certificado de conclusão do Estágio 12 do Método Callan de Inglês",

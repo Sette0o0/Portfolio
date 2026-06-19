@@ -83,7 +83,7 @@ body * {
   --bs-form-invalid-border-color: #ea868f; */
 }
 
-/* Fazer details ficar bonito com animação */
+/* Fazer details ficar bonito com animacao */
 details {
   overflow: hidden;
 }
@@ -104,7 +104,7 @@ details span {
 }
 
 details span::before {
-  content: "►";
+  content: ">";
   font-size: 1rem;
   display: flex;
   align-items: center;

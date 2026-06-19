@@ -1,0 +1,207 @@
+{
+  "perfil": {
+    "nome": "Rafael Sette de Araujo",
+    "nomeCurto": "Rafael Sette",
+    "foto": "/RafaelSetteFoto.jpg",
+    "formacaoAtual": "Cursando Desenvolvimento de Software Multiplataforma na Fatec São José dos Campos",
+    "titulo": "Desenvolvedor Web",
+    "objetivo": "Meu objetivo é atuar como desenvolvedor full stack, criando aplicações web, APIs REST e soluções digitais organizadas, responsivas e fáceis de manter.",
+    "areasInteresse": [
+      "Desenvolvimento web",
+      "APIs REST",
+      "Front-end com React",
+      "Back-end com Node.js"
+    ],
+    "resumo": "Desenvolvo aplicações web com React e TypeScript, além de estruturar APIs e servidores com Node.js e Express. Minha trajetória acadêmica tem foco em projetos integradores, trabalho em equipe e construção de soluções para problemas reais.",
+    "sobre": [
+      "Estou estudando na Fatec, onde desenvolvo projetos em grupo a cada semestre usando metodologia Scrum. Esses projetos, chamados de API (Aprendizagem por Projeto Integrador), partem de problemas reais apresentados por empresas parceiras.",
+      "Ao longo do curso venho ampliando minha base em desenvolvimento web, lógica de programação, bancos de dados, engenharia de software, APIs e organização de projetos."
+    ]
+  },
+  "contato": {
+    "email": "rafaelsette12345@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/rafael-sette-de-araujo-229b88334/",
+    "github": "https://github.com/Sette0o0",
+    "curriculo": "/CurrículoSette.pdf"
+  },
+  "formacoes": [
+    {
+      "instituicao": "Fatec São José dos Campos",
+      "curso": "Desenvolvimento de Software Multiplataforma",
+      "dataInicio": "2025",
+      "dataConclusao": "2027",
+      "status": "Em andamento"
+    },
+    {
+      "instituicao": "Etec Profª Ilza Nascimento Pintus - Ext. Alceu Maynard",
+      "curso": "Técnico em Desenvolvimento de Sistemas",
+      "dataInicio": "2022",
+      "dataConclusao": "2024",
+      "status": "Concluído"
+    }
+  ],
+  "cursosComplementares": [
+    {
+      "nome": "Curso de inglês com método Callan",
+      "instituicao": "Hugle Education",
+      "ano": "2024",
+      "link": "/imagens/certificados/certIngles12.jpg"
+    }
+  ],
+  "projetos": [
+    {
+      "nome": "Portfólio React-TS",
+      "descricao": "Site pessoal para apresentar projetos, formações, habilidades, certificados, eventos e informações de contato profissional.",
+      "problema": "Centralizar a trajetória acadêmica e profissional em uma vitrine digital organizada e fácil de atualizar.",
+      "objetivo": "Criar um portfólio responsivo com conteúdo editável por JSON.",
+      "solucao": "Estrutura em React e TypeScript com seções renderizadas a partir de arquivos de dados em assets.",
+      "metodologia": "Organização incremental das seções com foco em responsividade, clareza visual e manutenção simples.",
+      "desafios": "Transformar as seções fixas em uma estrutura escalável.",
+      "resultados": "Portfólio mais completo, alinhado ao roteiro acadêmico e preparado para atualização contínua.",
+      "tecnologias": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "repo": "https://github.com/Sette0o0/Portfolio",
+      "demo": "",
+      "imagens": []
+    },
+    {
+      "nome": "Estatísticas do Comércio Exterior do Estado de São Paulo",
+      "descricao": "Ferramenta para monitorar tendências do mercado internacional do estado de São Paulo por meio de dados, tabelas e gráficos.",
+      "problema": "Usuários precisavam acessar e comparar dados de comércio exterior de forma mais intuitiva.",
+      "objetivo": "Permitir a análise de cargas, municípios e valores de exportação/importação em uma interface prática.",
+      "solucao": "Aplicação web com tratamento e visualização de dados públicos.",
+      "metodologia": "Projeto acadêmico desenvolvido em equipe com práticas de Scrum e entregas por sprint.",
+      "desafios": "Tratar arquivos CSV governamentais e transformar dados brutos em visualizações compreensíveis.",
+      "resultados": "Criação de tabelas e gráficos que facilitam a comparação de cargas e municípios.",
+      "tecnologias": [
+        "Python",
+        "Flask",
+        "Pandas",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "atuacao": "Trabalhei principalmente com tratamento de dados em arquivos CSV usando Pandas. Também participei da criação de gráficos e tabelas com Plotly no Google Colab.",
+      "repo": "https://github.com/Team-Chronos/API-DSM-1SEMESTRE-2025",
+      "demo": "",
+      "imagens": [
+        "/imagens/projetos/apiComercioExteriorSP.jpg"
+      ]
+    },
+    {
+      "nome": "Plataforma de Gestão Administrativa, Comercial e Operacional",
+      "descricao": "Aplicação web para centralizar a gestão de setores administrativos, comerciais e operacionais de uma empresa.",
+      "problema": "A empresa precisava integrar operações como formulários, relatórios, frete e notificações em uma única plataforma.",
+      "objetivo": "Desenvolver uma solução web para organizar processos internos e facilitar o acesso às informações.",
+      "solucao": "Sistema com front-end em React, back-end em Node.js/Express e banco de dados MySQL.",
+      "metodologia": "Projeto acadêmico em equipe com Scrum, organização por sprints e evolução contínua do produto.",
+      "desafios": "Portar funcionalidades de JavaScript puro para React e integrar diferentes fluxos da aplicação.",
+      "resultados": "Plataforma funcional com módulos integrados para apoiar a rotina administrativa e operacional.",
+      "tecnologias": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "atuacao": "Atuei no banco de dados, rotas e controllers no back-end com Express, além de telas, formulários e layout no front-end com React.",
+      "repo": "https://github.com/Team-Chronos/API-DSM-2SEMESTRE-2025",
+      "demo": "",
+      "imagens": [
+        "/imagens/projetos/apiNeweAdm.jpg"
+      ]
+    }
+  ],
+  "habilidades": {
+    "tecnicas": [
+      {
+        "grupo": "Linguagens",
+        "itens": [
+          "TypeScript",
+          "JavaScript",
+          "Python",
+          "Java",
+          "HTML",
+          "CSS",
+          "SQL"
+        ]
+      },
+      {
+        "grupo": "Frameworks e bibliotecas",
+        "itens": [
+          "React",
+          "Node.js",
+          "Express",
+          "Flask",
+          "Tailwind",
+          "Bootstrap",
+          "Pandas"
+        ]
+      },
+      {
+        "grupo": "Banco de dados",
+        "itens": [
+          "MySQL",
+          "MongoDB",
+          "Modelagem relacional",
+          "Modelagem não relacional"
+        ]
+      },
+      {
+        "grupo": "Ferramentas e plataformas",
+        "itens": [
+          "Git",
+          "GitHub",
+          "Vite",
+          "Docker",
+          "Google Colab",
+          "Scrum"
+        ]
+      }
+    ],
+    "comportamentais": [
+      "Trabalho em equipe",
+      "Organização",
+      "Resolução de problemas",
+      "Comunicação",
+      "Aprendizado contínuo",
+      "Reconhecer o erro"
+    ]
+  },
+  "documentosAcademicos": [
+  ],
+  "certificados": [
+    {
+      "nome": "Certificado de conclusão do Estágio 12 do Método Callan de Inglês",
+      "instituicao": "Hugle Education",
+      "ano": "2024",
+      "arquivo": "/imagens/certificados/certIngles12.jpg"
+    }
+  ],
+  "eventos": [
+    {
+      "nome": "Palestra para calouros",
+      "tipo": "Palestra",
+      "ano": "2026",
+      "descricao": "Realizei uma palestra aos calouros do primeiro semestre, contando os desafios e as soluções encontradas durante o desenvolvimento do projeto API.",
+      "link": "/imagens/certificados/rafaelsette.pdf"
+    },
+    {
+      "nome": "Maratona de Programação Interna FatecSJC/2025-2",
+      "tipo": "Maratona de Programação",
+      "ano": "2025",
+      "descricao": "Eu e mais dois amigos resolvemos alguns problemas de programação propostos na maratona usando python em um curto período de tempo.",
+      "link": ""
+    }
+  ]
+}

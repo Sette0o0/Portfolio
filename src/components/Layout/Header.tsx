@@ -1,125 +1,101 @@
 import { useEffect, useRef } from "react"
-import ThemeToggle from "../ThemeToggle"
 import { Collapse } from "bootstrap"
+import ThemeToggle from "../ThemeToggle"
+
+const navItems = [
+  { id: "inicio", label: "Início" },
+  { id: "sobre-mim", label: "Sobre" },
+  { id: "curriculo", label: "Currículo" },
+  { id: "projetos", label: "Projetos" },
+  { id: "habilidades", label: "Habilidades" },
+  { id: "academico", label: "Acadêmico" },
+  { id: "contato", label: "Contato" }
+]
 
 function Header() {
-	const navbarRef = useRef<HTMLDivElement | null>(null)
+  const navbarRef = useRef<HTMLDivElement | null>(null)
 
-	useEffect(() => {
-		const header = document.querySelector("header.navbar")
-		if (!header) return
+  useEffect(() => {
+    const header = document.querySelector("header.navbar")
+    if (!header) return
 
-		const headerHeight = header.clientHeight
-		
-		const sections = document.querySelectorAll("section")
-		
-		sections.forEach((section) => {
-			(section as HTMLElement).style.scrollMarginTop = `${headerHeight}px`
-		});
-	}, [])
+    const headerHeight = header.clientHeight
+    const sections = document.querySelectorAll("section")
 
-	function closeNavbar() {
-		if (!navbarRef.current) return
-		if (document.querySelector("navbar-toggler")?.ariaExpanded === "false") return
+    sections.forEach((section) => {
+      (section as HTMLElement).style.scrollMarginTop = `${headerHeight}px`
+    })
+  }, [])
 
-		const collapse = Collapse.getOrCreateInstance(navbarRef.current)
-		collapse.hide()
-	}
+  function closeNavbar() {
+    if (!navbarRef.current) return
+    if (document.querySelector(".navbar-toggler")?.getAttribute("aria-expanded") === "false") return
 
-	function toggleNavbar() {
-		if (!navbarRef.current) return
+    const collapse = Collapse.getOrCreateInstance(navbarRef.current)
+    collapse.hide()
+  }
 
-		const collapse = Collapse.getOrCreateInstance(navbarRef.current)
-		collapse.toggle()
-	}
-	
-	function waitForScrollEnd(callback: () => void) {
-		let scrollTimeout: number
+  function toggleNavbar() {
+    if (!navbarRef.current) return
 
-		function onScroll() {
-			clearTimeout(scrollTimeout)
+    const collapse = Collapse.getOrCreateInstance(navbarRef.current)
+    collapse.toggle()
+  }
 
-			scrollTimeout = window.setTimeout(() => {
-				window.removeEventListener("scroll", onScroll)
-				callback()
-			}, 120)
-		}
+  function waitForScrollEnd(callback: () => void) {
+    let scrollTimeout: number
 
-		window.addEventListener("scroll", onScroll)
-	}
+    function onScroll() {
+      clearTimeout(scrollTimeout)
 
-	function handleNavClick(id: string) {
-		const section = document.getElementById(id)
+      scrollTimeout = window.setTimeout(() => {
+        window.removeEventListener("scroll", onScroll)
+        callback()
+      }, 120)
+    }
 
-		section?.scrollIntoView({
-			behavior: "smooth"
-		})
+    window.addEventListener("scroll", onScroll)
+  }
 
-		waitForScrollEnd(closeNavbar)
-	}
+  function handleNavClick(id: string) {
+    const section = document.getElementById(id)
 
-	return (
-		<>
-			<header className="navbar navbar-expand-sm bg-body-secondary sticky-top" style={{userSelect: "none"}}>
-				<nav className={`container-fluid`}>
-					<p className={`navbar-brand fw-medium mb-0`}>Rafael Sette</p>
-					<button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span className="navbar-toggler-icon"></span>
-					</button>
-					<div ref={navbarRef} id="navbarContent" className={`collapse navbar-collapse`}>
-						<ul className={`navbar-nav w-100`}>
-							<li>
-								<button
-									role="link"
-									type="button"
-									className="nav-link"
-									onClick={() => handleNavClick("inicio")}
-								>
-									Início
-								</button>
-							</li>
+    section?.scrollIntoView({
+      behavior: "smooth"
+    })
 
-							<li>
-								<button
-									role="link"
-									type="button"
-									className="nav-link"
-									onClick={() => handleNavClick("projetos")}
-								>
-									Projetos
-								</button>
-							</li>
+    waitForScrollEnd(closeNavbar)
+  }
 
-							<li>
-								<button
-									role="link"
-									type="button"
-									className="nav-link"
-									onClick={() => handleNavClick("formacoes")}
-								>
-									Formações
-								</button>
-							</li>
-
-							<li>
-								<button
-									role="link"
-									type="button"
-									className="nav-link text-nowrap"
-									onClick={() => handleNavClick("sobre-mim")}
-								>
-									Sobre Mim
-								</button>
-							</li>
-							<li className={`p-1 pb-2 p-sm-0 ms-sm-auto`}>
-								<ThemeToggle className={`p-1`} />
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</header>
-		</>
-	)
+  return (
+    <header className="navbar navbar-expand-lg bg-body-secondary sticky-top" style={{ userSelect: "none" }}>
+      <nav className={`container-fluid`}>
+        <p className={`navbar-brand fw-medium mb-0`}>Rafael Sette</p>
+        <button className="navbar-toggler" type="button" onClick={toggleNavbar} aria-controls="navbarContent" aria-expanded="false" aria-label="Abrir navegação">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div ref={navbarRef} id="navbarContent" className={`collapse navbar-collapse`}>
+          <ul className={`navbar-nav w-100 align-items-lg-center`}>
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <button
+                  role="link"
+                  type="button"
+                  className="nav-link text-nowrap"
+                  onClick={() => handleNavClick(item.id)}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+            <li className={`p-1 pb-2 p-lg-0 ms-lg-auto`}>
+              <ThemeToggle className={`p-1`} />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  )
 }
 
 export default Header
